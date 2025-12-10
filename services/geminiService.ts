@@ -1,3 +1,5 @@
+/// <reference types="vite/client" />
+
 import { GoogleGenAI } from "@google/genai";
 import { SearchResponse, WebSource, QuizQuestion, QuizConfig, Attachment } from "../types";
 
@@ -5,6 +7,7 @@ import { SearchResponse, WebSource, QuizQuestion, QuizConfig, Attachment } from 
 const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 console.log("API Key:", apiKey ? "Set" : "Missing");
 const ai = new GoogleGenAI({ apiKey });
+
 export const performSearch = async (query: string, attachments: Attachment[] = []): Promise<SearchResponse> => {
     try {
         const parts: any[] = [];
