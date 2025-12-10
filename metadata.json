@@ -1,0 +1,7 @@
+{
+  "name": "Green search",
+  "description": "A powerful AI-powered search engine using Gemini 2.5 Flash with Google Search grounding to provide up-to-date, cited answers.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
